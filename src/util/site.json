@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Foundation",
+    "title": "Jessica Nagar",
     "titleTemplate": "%s",
-    "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
-    "siteUrl": "https://foundation.stackrole.com",
-    "image": "/assets/stackrole.png",
+    "description": "First blog page",
+    "siteUrl": "https://idmx268-jessica-nagar.netlify.app",
+    "image": "/assets/bench-accounting-nvzvopqw0gc-unsplash.jpg",
     "iconimage": "/assets/stackrole.png",
     "twitterUsername": "@stackrole"
   },
