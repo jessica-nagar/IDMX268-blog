@@ -2,7 +2,7 @@
 template: blog-post
 title: Everything you need to know to get started with Cascade Layers
 slug: /article-1
-date: 2022-02-06 21:39
+date: 2022-02-06 21:45
 description: Everything you need to know to get started with Cascade Layers
 featuredImage: /assets/fredrick-tendong-hvyepjyehdq-unsplash.jpg
 ---
