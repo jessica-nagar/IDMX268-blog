@@ -8,13 +8,9 @@ featuredImage: /assets/altumcode-mcj7uinqoyq-unsplash.jpg
 ---
 **Basic Knowledge**
 
-            Cascade layers is a new and important part of determining what style will actually be applied to web page. The @layer rule allows explicit orchestration of how styles from different sources are evaluated and prioritized. The purpose of cascade layers can be understood by understanding a foundational principle of the cascade: origins. When browsers composite styles, there are three primary origins: Author (the stylesheets you add to your website), User origins (style the browsers may allow providing as preferences such as default font, font size, and color), User-agent (default styles applied by the browser.) Due to the "virtual" rules they create, transitions and animations are considered origins. CSS uses the !important rule to add more importance to a property or value than usual. This rule also revers the order of origins when used, meaning instead of the order being: author, user, user-agent, it would be, user-agent, user, author.
+            Cascade layers is a new and important part of determining what style will actually be applied to web page. The @layer rule allows explicit orchestration of how styles from different sources are evaluated and prioritized. The purpose of cascade layers can be understood by understanding a foundational principle of the cascade: origins. When browsers composite styles, there are three primary origins: Author (the stylesheets you add to your website), User origins (style the browsers may allow providing as preferences such as default font, font size, and color), User-agent (default styles applied by the browser.) Due to the "virtual" rules they create, transitions and animations are considered origins. CSS uses the !important rule to add more importance to a property or value than usual. This rule also reverses the order of origins when used, meaning instead of the order being: author, user, user-agent, it would be, user-agent, user, author.
 
             The browser applies the style based on the cascade sort order. The sort order before cascade layers were introduced was: origins of importance, context (inside a shadow DOM), element (attached styles, within the style attribute), specificity, and order of appearance (aka, the last one “wins”.) The new cascade layer rule will be placed in between element and specificity making it higher priority then specificity and order of appearance.
-
- 
-
- 
 
 **Use Cases for Cascade Layers**
 
