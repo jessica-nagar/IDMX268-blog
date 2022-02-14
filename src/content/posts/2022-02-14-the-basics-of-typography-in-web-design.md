@@ -2,7 +2,7 @@
 template: blog-post
 title: "The Basics of Typography in Web Design "
 slug: /article-2
-date: 2022-02-13 21:49
+date: 2022-02-13 22:16
 description: The Basics of Typography in Web Design
 featuredImage: /assets/6k23jnhz8lqufkfngcmdsu.png
 ---
