@@ -32,7 +32,7 @@ There are two main classifications of fonts: serif and sans serif. Serif fonts h
 
             Using a web safe font will provide you more control over how your text appears across all browsers and operating systems. The most popular fonts that people like to use in web page design are: Arial, Times New Roman, Verdana, Georgia, and Courier. Some other approved fonts are: Impact, Lucida Console, Lucida Sans, Palatino, Tahoma, Comic Sans, and Trebuchet.
 
-> ![List of Fonts](/assets/serif-and-sans-serif-some-examples.webp "List of Fonts")
+> ![List of Fonts](/assets/microsoftteams-image.png "List of Fonts")
 
 ### **Proper Font Size is Crucial to Typography**
 
@@ -41,8 +41,6 @@ There are two main classifications of fonts: serif and sans serif. Serif fonts h
             Another important element of typography is font size. The three most popular units of measurements are: em, percentages, and pixels. Em is a popular typographic dimension for web designs because it scales well and allows for smaller size increments. Many people prefer to use percentages for font sizes because they provide the user more choice over the size of the font. The font size options in their browser decide the size. Pixels are a unit of measurement for screen resolution and provide you less control because you can only use full numbers. CSS can also be used to control kerning and leading. The letter-spacing attribute can be used to modify kerning, which is the gap between characters. The CSS property line-height can be used to manage leading.
 
 ![Example of Letter spacing](/assets/letter-spacing-example.png "Example of Letter spacing")
-
- 
 
 ### ***Some Typography Guidelines:***
 
