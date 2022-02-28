@@ -4,6 +4,7 @@ title: CSS's Modern Features
 slug: /article-3
 date: 2022-02-27 20:19
 description: CSS's Modern Features
+featuredImage: /assets/gatsby-starter-foundation-dark-mode.jpg
 ---
 
 
@@ -19,10 +20,67 @@ One of the most frequently requested app and website design features is dark mod
 
                 Users who have set their color settings to dark mode on their operating system may nevertheless want to see some websites in light mode, and vice versa. Markup and Styles Configuration
 
-* Create the simplified markup o Use CSS variables to choose your colors and styles
+* Create the simplified markup 
+
+```HTML
+<body>
+   <div class="wrapper">
+      <svg class="lightsaber first">...</svg>
+      <svg class="lightsaber second">...</svg>
+      <button class="btn">Toggle mode</button>
+  </div>
+</body>
+```
+
+* Use CSS variables to choose your colors and styles
+
+```CSS
+/* default, light mode styles set with variables */
+:root {
+   --color-background: #f9f9f9;
+   --color-default: #000;
+   --color-accent-1: deepskyblue;
+   --color-accent-2: violet;
+}
+
+body{
+   background-color: car(--color-background);
+}
+
+/* Toggle button */
+.btn {
+   background-color: var(--color-background);
+   border: var(---color-default) solid 3px;
+   color: var(--color-default);
+}
+
+/* SVG lightsabers */
+.first-blade {
+   fill: var(--color-accent-1);
+}
+
+.second-blade {
+   fill: var(--color-accent-2);
+}
+
+.handle {
+   fill: var(--color-default);
+}
+```
+
 * After that, specify the dark mode styles.
 
   * It will be toggled or added automatically when a button is pressed to apply alternate dark mode color values to the full document.
+
+```CSS
+/*Dark-mode*/
+.dark-mode .example-2 {
+   --color-background: #000;
+   --color-default: #f9f9f9;
+   --color-accent-1: cyan;
+   --color-accent-2: magenta;
+}
+```
 
 ***Fluid Typography***
 
@@ -36,9 +94,27 @@ One of the most frequently requested app and website design features is dark mod
 
                 The selectors used by media queries are used to determine the media device on which the website is rendered and apply the defined media rules to them. We may design a rule to modify the font size based on the current viewport of the device using fixed values in our media queries. By defining the font size in vw, we can avoid the calculation and rely solely on CSS to adjust the font to the viewport. The only issue with constant values is that they only function for a limited number of resolutions. If the resolution is too high, the font will be too large, which isn't always necessary.
 
+```CSS
+@media screen and (max-width: 840px) {
+   p {
+      color: red;
+   }
+}
+```
+
 **CSS Clamp Method for Fluid Typography**
 
                 Two boundaries and a preferred value are required by the CSS Clamp function. These are the minimum and maximum boundaries. The function moves around these limits, picking a value from somewhere in the middle. The minimal bound is utilized if the desired values fall below the minimum bound. When it exceeds the maximum bound, on the other hand, the maximum bound is used.
+
+```CSS
+<style>
+   p {
+      font-size: clamp(12px, 40px, 200px);
+      margin-top: 40px;
+      text-align: center;
+   }
+</style>
+```
 
 ***Responsive Units of Measurement and How to Use Them***
 
